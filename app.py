@@ -17,6 +17,10 @@ JOBS = [{
     'title': 'Data Analyst',
     'location': 'Seattle',
     'salary': '$ 175,000'
+}, {
+    'id': 4,
+    'title': 'Math Professor',
+    'location': 'Canada'
 }]
 
 
