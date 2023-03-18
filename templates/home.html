@@ -20,7 +20,11 @@
             <h2 class="text-center mt-2 mb-4">About Jovian</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed elit dui. Mauris vel nisi enim. Nulla facilisi. Pellentesque at nulla congue, malesuada lorem sit amet, scelerisque massa. Aenean mi urna, dignissim vitae venenatis quis, tincidunt vel sem. Praesent aliquet risus quis lectus tristique porta. Aliquam dui nisl, vestibulum ac ligula ut, vulputate dignissim nibh. Nullam nec justo libero. Donec felis ex, tristique at arcu in, venenatis facilisis erat.</p>
             <h2 class="text-center mt-2 mb-4">Open Positions</h2>
-            <p>TODO - Jobs</p>
+            <div>
+                {% for job in jobs %}
+                    {% include 'jobitem.html' %}
+                {% endfor %}
+            </div>
             <div class="text-center mb-4">
             <button class="btn btn-primary btn-lg">Contact Us</button>
             <p class="mt-2">Copyright 2023, Jovian</p>
