@@ -14,11 +14,19 @@
         </style>
     </head>
     <body>
+        {% include 'nav.html' %}
         <div class="container">
             <h1 class="text-center mt-2 mb-4">Jovian Careers</h1>
             <img class="img-fluid" id="banner" src="https://jovian-careers-website.vamsimohanramin.repl.co/static/banner.jpg" >
             <h2 class="text-center mt-2 mb-4">About Jovian</h2>
-            <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed elit dui. Mauris vel nisi enim. Nulla facilisi. Pellentesque at nulla congue, malesuada lorem sit amet, scelerisque massa. Aenean mi urna, dignissim vitae venenatis quis, tincidunt vel sem. Praesent aliquet risus quis lectus tristique porta. Aliquam dui nisl, vestibulum ac ligula ut, vulputate dignissim nibh. Nullam nec justo libero. Donec felis ex, tristique at arcu in, venenatis facilisis erat.</p>
+            <div class="row" style="margin-bottom:20px;">
+                <div class="col-md-6">
+                    <p class="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sed elit dui. Mauris vel nisi enim. Nulla facilisi. Pellentesque at nulla congue, malesuada lorem sit amet, scelerisque massa. Aenean mi urna, dignissim vitae venenatis quis, tincidunt vel sem. Praesent aliquet risus quis lectus tristique porta. Aliquam dui nisl, vestibulum ac ligula ut, vulputate dignissim nibh. Nullam nec justo libero. Donec felis ex, tristique at arcu in, venenatis facilisis erat.</p>
+                </div>
+                <div class="d-none d-md-block col-md-6">
+                    <img src="/static/people.jpg" style="height:320px; border-radius:4px;">
+                </div>
+            </div>
             <h2 class="text-center mt-2 mb-4">Open Positions</h2>
             <div>
                 {% for job in jobs %}
@@ -26,9 +34,9 @@
                 {% endfor %}
             </div>
             <div class="text-center mb-4">
-            <button class="btn btn-primary btn-lg">Contact Us</button>
-            <p class="mt-2">Copyright 2023, Jovian</p>
+            <a class="btn btn-primary btn-lg" href="mailto:support@jovian.ai?subject=Question%20to%20Jovian&body=Name%3A%20%3Cyour%20name%3E%0D%0AQuestion%3A%20%3Cyour%20question%3E">Contact Us</a>
             </div>
         </div>
+    {% include 'footer.html' %}
     </body>
 </html>
